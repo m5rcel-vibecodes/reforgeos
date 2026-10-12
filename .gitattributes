@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Keep upstream license whitespace intact.
+third-party-licenses/** -whitespace

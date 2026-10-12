@@ -1,0 +1,10 @@
+# Enforced native limits; bytes use base-2 units.
+max_files = 100000
+max_extracted_bytes = 21474836480 # 20 GiB, including nested output
+max_file_bytes = 4294967296      # 4 GiB per extracted file
+max_binary_bytes = 268435456     # 256 MiB per binary read
+max_depth = 8                   # 0 disables nested extraction
+max_strings = 10000             # each string capped at 4096 bytes
+timeout_seconds = 600           # each external process
+function_timeout_seconds = 30   # each Ghidra function
+min_free_bytes = 134217728      # 128 MiB free during extraction

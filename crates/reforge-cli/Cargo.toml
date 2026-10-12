@@ -1,0 +1,19 @@
+[package]
+name = "reforge-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "reforge"
+path = "src/main.rs"
+
+[dependencies]
+reforge-core = { path = "../reforge-core" }
+anyhow.workspace = true
+serde_json.workspace = true
+clap = { version = "4.5.51", features = ["derive"] }
+
+[dev-dependencies]
+tempfile.workspace = true

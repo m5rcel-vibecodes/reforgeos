@@ -1,0 +1,25 @@
+[package]
+name = "reforge-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tempfile.workspace = true
+thiserror = "2.0.17"
+sha2 = "0.10.9"
+object = { version = "0.36.7", features = ["read", "std"], default-features = false }
+rusqlite = { version = "0.32.1", features = ["bundled"] }
+zip = { version = "6.0.0", default-features = false, features = ["deflate"] }
+tar = "0.4.44"
+flate2 = "1.1.5"
+toml = "0.9.8"
+fs2 = "0.4.3"
+iced-x86 = { version = "1.21.0", default-features = false, features = ["std", "decoder", "intel"] }
+
+[dev-dependencies]
+object = { version = "0.36.7", features = ["write"] }
